@@ -1,29 +1,12 @@
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-                &kp A  // Taste 0
-                &kp B  // Taste 1
-                &kp C  // Taste 2
-                &kp D  // Taste 3
-                &kp E  // Taste 4
-                &kp F  // Taste 5
-                &kp G  // Taste 6
-                &kp H  // Taste 7
-                &kp I  // Taste 8
-                &kp J  // Taste 9
-                &kp K  // Taste 10
-                &kp L  // Taste 11
-                &kp M  // Taste 12
-                &kp N  // Taste 13
-                &kp O  // Taste 14
-                &kp P  // Taste 15
-            >;
-        };
+&mt {
+    default_layer {
+        bindings = <
+            &kp A &kp B &kp C &kp D
+            &kp E &kp F &kp G &kp H
+            &kp I &kp J &kp K &kp L
+            &kp M &kp N &kp O &kp NO
+        >;
     };
 };
